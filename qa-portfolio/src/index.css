@@ -1,30 +1,40 @@
 @import "tailwindcss";
 
-:root {
+/* 1. Register variables natively into the Tailwind theme layer */
+@theme {
   /* Backgrounds */
-  --bg-primary: #021020;
-  --bg-secondary: #03172B;
-  --bg-card: #062443;
-  --bg-deep: #02040A;
+  --color-bg-primary: #021020;
+  --color-bg-secondary: #03172B;
+  --color-bg-card: #062443;
+  --color-bg-deep: #02040A;
 
   /* Borders */
-  --border: #0B3D6E;
+  --color-border: #0B3D6E;
 
   /* Brand / Interaction */
-  --primary: #0D82D2;
-  --primary-bright: #008FF0;
+  --color-primary: #0D82D2;
+  --color-primary-bright: #008FF0;
 
   /* Typography */
-  --text-primary: #F3F5FA;
-  --text-secondary: #C2D3EE;
-  --text-muted: #5E82A3;
-  --text-blue-gray: #84AACB;
+  --color-text-primary: #F3F5FA;
+  --color-text-secondary: #C2D3EE;
+  --color-text-muted: #5E82A3;
+  --color-text-blue-gray: #84AACB;
 
   /* States */
-  --success: #00B87A;
-  --warning: #F5B942;
-  --error: #EF5350;
+  --color-success: #00B87A;
+  --color-warning: #F5B942;
+  --color-error: #EF5350;
 
   /* Brand */
-  --brand-blue: #0D82D2;
+  --color-brand-blue: #0D82D2;
+}
+
+/* 2. Place custom utilities in the correct cascade layer */
+@layer utilities {
+  /* .test { */
+    /* Tailwind v4 maps theme keys prefixed with --color-* to standard CSS variables */
+    /* background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+  } */
 }
