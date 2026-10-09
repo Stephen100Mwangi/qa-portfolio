@@ -8,7 +8,7 @@ const projects = [
     tech: ["Playwright", "TypeScript", "Cucumber"],
     github: "#",
     demo: "#",
-    image: "././public/ecommerce.jpg",
+    image: "/ecommerce.jpg",
   },
   {
     title: "MealTier Web App",
@@ -17,7 +17,7 @@ const projects = [
     tech: ["React", "Node.js", "PostgreSQL", "Playwright"],
     github: "#",
     demo: "#",
-    image: "././public/mealter.jpg",
+    image: "/mealter.jpg",
   },
   {
     title: "Weather AI Explorer",
@@ -26,7 +26,7 @@ const projects = [
     tech: ["React", "TypeScript", "OpenWeather API"],
     github: "#",
     demo: "#",
-    image: "././public/weather.jpg",
+    image: "/weather.jpg",
   },
   {
     title: "Playwright CI Setup",
@@ -35,7 +35,7 @@ const projects = [
     tech: ["Playwright", "TypeScript", "GitHub Actions"],
     github: "#",
     demo: "#",
-    image: "././public/playwright.jpg",
+    image: "/playwright.jpg",
   },
 ];
 

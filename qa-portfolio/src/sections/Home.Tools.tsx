@@ -211,7 +211,7 @@ const whatIDo = [
 const Tools = () => {
   return (
     <div className="tools flex justify-between gap-10 items-start px-10 py-5 pt-10">
-      <div className="left w-1/3">
+      <div className="left w-[40%] pb-10">
         <p className="font-bold text-lg">What I Do</p>
         <div className="service-items flex flex-col gap-5 mt-5">
           {whatIDo.map((item, index) => (
@@ -227,18 +227,18 @@ const Tools = () => {
           ))}
         </div>
       </div>
-      <div className="middle w-1/3">
+      <div className="middle w-[40%]">
         <p className="font-bold text-lg">Testing Tools</p>
-        <div className="tools-list flex flex-wrap gap-3 mt-5">
+        <div className="tools-list flex flex-wrap gap-10 mt-5">
           {tools.map((tool, index) => (
-            <div key={index} className="tool flex items-center gap-1  w-28">
-              <span className="icon scale-50">{tool.icon}</span>
-              <span className="name text-sm">{tool.name}</span>
+            <div key={index} className="tool flex items-center gap-5  w-28">
+              <span className="icon scale-100">{tool.icon}</span>
+              <span className="name text-base">{tool.name}</span>
             </div>
           ))}
         </div>
       </div>
-      <div className="right w-1/3 flex flex-col gap-3">
+      <div className="right w-[20%] flex flex-col gap-3">
         <Lightbulb className="scale-125" />
         <p className="font-bold text-lg">My Testing Philosophy</p>
 

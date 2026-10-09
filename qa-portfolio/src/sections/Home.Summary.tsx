@@ -27,7 +27,7 @@ const Summary = () => {
         </div>
       </div>
       <div className="rightPanel relative w-1/2 flex justify-center items-center">
-        <img src="././public/QAE.svg" alt="Hero Image" className="heroImage" />
+        <img src="/QAE.svg" alt="Hero Image" className="heroImage" />
         <div className="absolute border-border w-40 bg-[#021020] text-text-primary rounded-md p-3 flex flex-col gap-3 top-5 right-5">
           <div className="keyIndicators flex gap-2">
             {keyIndicators.map((color, index) => (
@@ -40,7 +40,7 @@ const Summary = () => {
           </div>
           <div className="keyMetrics flex flex-col gap-1 text-sm -translate-x-2 font-light">
             {keyMetrics.map((metric, index) => (
-              <div key={index} className="metric flex items-center gap-1">
+              <div key={index} className="metric flex items-center -gap-1 text-xs">
                 <span>
                   <Check className="scale-50" />
                 </span>
