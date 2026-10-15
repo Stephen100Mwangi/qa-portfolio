@@ -26,7 +26,7 @@ const qaJourney = [
   },
   {
     role: "Quality Analyst",
-    years: "1 yr",
+    years: "1 yr 10 months",
     period: "Jan 2025 - Present",
     location: "Griffin Global Technologies",
     icon: <BugOff />,

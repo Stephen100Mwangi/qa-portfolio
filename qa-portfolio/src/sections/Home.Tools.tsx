@@ -11,7 +11,7 @@ import {
 const tools = [
   {
     name: "Playwright",
-    icon: <img height="32" width="32" src="././public/playwright.svg" />,
+    icon: <img height="32" width="32" src="/playwright.svg" />,
   },
   {
     name: "Cypress",
@@ -75,7 +75,7 @@ const tools = [
   },
   {
     name: "AWS",
-    icon: <img height="32" width="32" src="././public/aws.svg" />,
+    icon: <img height="32" width="32" src="/aws.svg" />,
   },
   {
     name: "GraphQL",
