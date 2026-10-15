@@ -210,7 +210,7 @@ const whatIDo = [
 
 const Tools = () => {
   return (
-    <div className="tools flex justify-between gap-10 items-start px-10 py-5 pt-10">
+    <div className="tools flex justify-between gap-10 items-start px-20 py-5 pt-10">
       <div className="left w-[40%] pb-10">
         <p className="font-bold text-lg">What I Do</p>
         <div className="service-items flex flex-col gap-5 mt-5">

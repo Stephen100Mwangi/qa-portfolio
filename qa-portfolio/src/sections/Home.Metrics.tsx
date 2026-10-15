@@ -8,7 +8,7 @@ const MyMetrics = [
 ];
 const Metrics = () => {
   return (
-    <div className="p-10 flex justify-between shadow-md bg-[#03172B]">
+    <div className="p-10 px-20 flex justify-between shadow-md bg-[#03172B]">
       {MyMetrics.map((metric, index) => (
         <div key={index} className="metric flex items-center gap-5">
           <span className="text-primary-bright scale-125">{metric.icon}</span>

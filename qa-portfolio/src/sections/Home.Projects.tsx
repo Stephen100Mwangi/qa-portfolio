@@ -41,7 +41,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="flex flex-col gap-10 items-start px-10 py-5 pt-10">
+    <div className="flex flex-col gap-10 items-start px-20 py-5 pt-10">
       <div className="flex justify-between items-center w-full">
         <p className="font-bold text-lg">Featured Projects</p>
         <p className="text-blue-500 hover:underline cursor-pointer text-base tracking-tight font-light">

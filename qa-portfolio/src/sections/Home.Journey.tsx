@@ -1,5 +1,6 @@
 import { FiGithub } from "react-icons/fi";
 import { CiLinkedin, CiMail } from "react-icons/ci";
+import { Link } from "react-router-dom";
 import {
   BadgeCheck,
   BugOff,
@@ -56,16 +57,11 @@ const MyLinks = [
     icon: <CiMail />,
     url: "mailto:mwangiwahome70@gmail.com",
   },
-  //   {
-  //     name: "Location",
-  //     icon: <CiLocationOn />,
-  //     url: "Nairobi, Kenya",
-  //   },
 ];
 
 const Journey = () => {
   return (
-    <div className="flex justify-between items-start px-10 py-5 gap-10 my-10">
+    <div className="flex justify-between items-start px-20 py-5 gap-10 my-10">
       <div className="w-[45%] border-r pr-5">
         <p className="font-bold text-xl text-white">My QA Journey</p>
         <div className="mt-5 w-full justify-between flex flex-nowrap overflow-clip gap-5">
@@ -108,9 +104,15 @@ const Journey = () => {
             </div>
           ))}
         </div>
-        <button className="mt-5 rounded-lg border border-sky-500/60 px-4 py-2 text-sm font-medium cursor-pointer w-fit flex items-center gap-2">
-          View All Certifications <MoveRight size={16} />
-        </button>
+        <a
+          href="http://localhost:5173/certifications"
+          className="mt-5 rounded-lg border border-sky-500/60 px-4 py-2 text-sm font-medium cursor-pointer w-fit flex items-center "
+        >
+          <Link to="/certifications" className="flex items-center gap-3">
+            <span>View All Certifications</span>
+            <MoveRight size={16} />
+          </Link>
+        </a>
       </div>
 
       <div className="w-[25%] border-l pl-5">

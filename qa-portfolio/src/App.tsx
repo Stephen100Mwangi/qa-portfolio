@@ -1,21 +1,20 @@
-import Summary from "./sections/Home.Summary";
-import Topbar from "./sections/Topbar";
-import Metrics from "./sections/Home.Metrics";
-import Tools from "./sections/Home.Tools";
-import Projects from "./sections/Home.Projects";
-import Footer from "./sections/Footer";
-import Journey from "./sections/Home.Journey";
+import Topbar from "./components/Topbar";
+import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import Learning from "./pages/Learning";
+import Home from "./pages/Home";
+import Certifications from "./pages/Certifications";
 
 function App() {
   return (
     <div className="bg-[#021020] min-h-screen text-text-primary">
-      <Topbar></Topbar>
-      <Summary></Summary>
-      <Metrics></Metrics>
-      <Tools></Tools>
-      <Projects></Projects>
-      <Journey></Journey>
-      <Footer></Footer>
+      <Topbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/learning" element={<Learning />} />
+        <Route path="/certifications" element={<Certifications />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

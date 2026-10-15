@@ -6,7 +6,7 @@ const keyIndicators = ["#00B87A", "#EF5350", "#F5B942"];
 
 const Summary = () => {
   return (
-    <div className="summary flex justify-between gap-10 items-center px-10 py-5">
+    <div className="summary flex justify-between gap-10 items-center px-20 py-5">
       <div className="leftPanel w-1/2 flex flex-col gap-2">
         <p className="text-lg font-bold uppercase text-primary-bright">
           Quality Assurance Engineer
@@ -27,8 +27,8 @@ const Summary = () => {
         </div>
       </div>
       <div className="rightPanel relative w-1/2 flex justify-center items-center">
-        <img src="/QAE.svg" alt="Hero Image" className="heroImage" />
-        <div className="absolute border-border w-40 bg-[#021020] text-text-primary rounded-md p-3 flex flex-col gap-3 top-5 right-5">
+        <img src="/QAE.png" alt="Hero Image" className="heroImage" />
+        <div className="absolute border-border w-40 bg-[#021020] text-text-primary rounded-md p-3 flex flex-col gap-3 top-5 -right-10">
           <div className="keyIndicators flex gap-2">
             {keyIndicators.map((color, index) => (
               <div
@@ -40,7 +40,10 @@ const Summary = () => {
           </div>
           <div className="keyMetrics flex flex-col gap-1 text-sm -translate-x-2 font-light">
             {keyMetrics.map((metric, index) => (
-              <div key={index} className="metric flex items-center -gap-1 text-xs">
+              <div
+                key={index}
+                className="metric flex items-center -gap-1 text-xs"
+              >
                 <span>
                   <Check className="scale-50" />
                 </span>
